@@ -249,7 +249,7 @@ pre {
 }
 
 .post {
-  font-family: 'STKaiti', "Source Sans Pro";
+  font-family: 'STFangsong', "Source Sans Pro";
   font-size: 18px;
   font-weight: 300;
   padding-top: 0;
@@ -314,11 +314,15 @@ pre {
   float: right;
 }
 .postTitle {
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-indent: 3px;
+}
+.postExt {
+  font-family: 'STKaiti';
 }
 /**
  * Site header
@@ -512,10 +516,9 @@ pre {
   margin-bottom: $spacing-unit;
 }
 .post-title {
-  font-size: 46px;
-
+  font-size: 45px;
   text-align: center;
-  font-family: 'STKaiti', "PT Sans";
+  font-family: 'STFangsong', "PT Sans";
   font-weight: 900;
   @include media-query($on-laptop) {
     font-size: 36px;
