@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-07T23:34:59+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Hello, It’s me</title><subtitle>博观而约取，厚积而薄发</subtitle><author><name>Diana Zhao</name></author><entry><title type="html">产品经理如何对产品验收</title><link href="http://localhost:4000/product%20design%20methodology/2019/11/07/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%A6%82%E4%BD%95%E5%AF%B9%E4%BA%A7%E5%93%81%E8%BF%9B%E8%A1%8C%E9%AA%8C%E6%94%B6/" rel="alternate" type="text/html" title="产品经理如何对产品验收" /><published>2019-11-07T00:00:00+08:00</published><updated>2019-11-07T00:00:00+08:00</updated><id>http://localhost:4000/product%20design%20methodology/2019/11/07/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%A6%82%E4%BD%95%E5%AF%B9%E4%BA%A7%E5%93%81%E8%BF%9B%E8%A1%8C%E9%AA%8C%E6%94%B6</id><content type="html" xml:base="http://localhost:4000/product%20design%20methodology/2019/11/07/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%A6%82%E4%BD%95%E5%AF%B9%E4%BA%A7%E5%93%81%E8%BF%9B%E8%A1%8C%E9%AA%8C%E6%94%B6/">&lt;p&gt;本文章讨论作为产品经理，需要关注产品测试的哪些方面，以及如何进行产品的验收。&lt;/p&gt;
+
+&lt;h2 id=&quot;产品经理的测试和验收&quot;&gt;产品经理的测试和验收&lt;/h2&gt;
+
+&lt;p&gt;一方面，开发完成后的产品很可能与产品的定义出现偏差（原因很多，事实上大部分开发人员没有仔细查看需求文档，有了大概印象就开始开发）；另一方面，产品验收需要从用户角度，去更加广度和深度地审视整个产品。所以，开发人员完成开发后，不仅需要测试同学对产品进行测试，产品经理也要对产品进行验收。&lt;/p&gt;
+
+&lt;p&gt;产品经理主要参与的是系统测试阶段和对产品的验收。开发人员对开发代码的最小单位进行单元测试，然后将程序模块组合起来，进行集成测试。在系统测试阶段，将可运行的软件安装在真实或者模拟真实的环境下操作使用，测试软件的功能和性能，能够正常的运行。产品配合测试人员，从业务角度验证产品是否符合设计的要求和需求文档，关心功能模块的可用性和性能等。&lt;/p&gt;
+
+&lt;p&gt;之后进行产品验收，验收阶段需要以用户为主进行测试，按照用户的使用情况设计测试用例和流程，使用生产中的实际数据进行测试，确定软件能否满足交付的标准。在这个阶段，产品经理需要从产品思维转化为用户思维，关心主要流程，可用性，易用性，兼容性，情感化设计等多个方面的用户体验的问题。要求产品经理进行探索性质的测试，能够从实际的使用场景中发现问题，进行更加全局的考虑。&lt;/p&gt;
+
+&lt;h2 id=&quot;系统测试&quot;&gt;系统测试&lt;/h2&gt;
+
+&lt;p&gt;这个阶段主要进行功能性测试，从业务角度验证产品是否符合设计的要求和需求文档。主要还是测试人员在测试，但是产品经理在这个过程中，具有需要特别关注的点：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;功能测试：&lt;/strong&gt; 对产品的各功能模块进行验收，根据测试用例以及各种操作路径，逐项测试检验，以确定产品是否达到设计的要求。这部分的测试工作与测试人员的专业测试有重合。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UI 测试：&lt;/strong&gt; 首先，产品经理要检验实现出来的产品，能否达到 UED 的界面设计以及产品的交互设计要求。界面文字是否显示正确，命名是否统一；控件的摆放位置是否符合客户的使用习惯；文字、图片的组合是否一致；页面元素的可用性等。&lt;/p&gt;
+
+&lt;p&gt;其次，要从整体上检验产品界面可能存在的问题。界面的功能模块的布局是否合理，整体风格是否一致；页面是否美观。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;性能测试：&lt;/strong&gt; 模拟多种正常、峰值以及异常负载条件来对系统的各项指标进行测试。产品经理需要关注当负载逐渐增加的时候，系统各项指标的变化情况，这样来确定系统的瓶颈，以获得系统能够提供的最大服务级别。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;回归测试：&lt;/strong&gt; 产品要关注在代码升级之后，产品的核心流程和重点功能模块没有问题。&lt;/p&gt;
+
+&lt;h2 id=&quot;产品验收&quot;&gt;产品验收&lt;/h2&gt;
+
+&lt;p&gt;产品经理对产品最熟悉，验收一定要将自己的产品思维转化为&lt;strong&gt;用户思维&lt;/strong&gt;，想象自己是一个小白用户，从用户的使用场景出发。随意输入，随意点击，不断与系统交互，带着问题测试。目的是通过带着问题的测试，以不同用户的不同操作流程去使用产品，发现问题。&lt;/p&gt;
+
+&lt;p&gt;或者找不太熟悉产品的交付、销售等同事，实际使用产品，产品经理提个小板凳在边上观察操作的流程，看哪里阻塞了，哪里有问题。在这个阶段，产品经理要建立并维护自己的 checklist，可能会有一些需要深入思考的问题浮现出来，也为以后的产品设计提供思路和参考。&lt;/p&gt;
+
+&lt;h2 id=&quot;产品验收报告&quot;&gt;产品验收报告&lt;/h2&gt;
+
+&lt;p&gt;经过系统测试和产品的验收，这一轮的产品验收完成，可以完成一个验收报告同步给研发测试同事，项目经理，领导等。&lt;/p&gt;
+
+&lt;p&gt;报告中包含这轮产品的需求内容，时间以及系统版本号等基本信息。如果有未完成的需求，需要标注出优先级，放到后续迭代中。这轮产品迭代中，有哪些遗留的问题，要具体描述问题是什么（在 jira 中建立问题，详细描述问题，标注链接）。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Sprint X.X 产品验收报告&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;产品更新内容&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;产品版本号&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;封版时间&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;遗留问题&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;产品验收人&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;验收时间&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;另外，团队或者个人需要进行产品的 checklist（产品债务）的维护。&lt;/p&gt;</content><author><name>Diana Zhao</name></author><category term="日常工作" /><summary type="html">本文章讨论作为产品经理，需要关注产品测试的哪些方面，以及如何进行产品的验收。</summary></entry><entry><title type="html">通过创造的价值衡量产品经理水平</title><link href="http://localhost:4000/product%20design%20methodology/2019/11/06/%E9%80%9A%E8%BF%87%E5%88%9B%E9%80%A0%E7%9A%84%E4%BB%B7%E5%80%BC%E8%A1%A1%E9%87%8F%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%B0%B4%E5%B9%B3/" rel="alternate" type="text/html" title="通过创造的价值衡量产品经理水平" /><published>2019-11-06T00:00:00+08:00</published><updated>2019-11-06T00:00:00+08:00</updated><id>http://localhost:4000/product%20design%20methodology/2019/11/06/%E9%80%9A%E8%BF%87%E5%88%9B%E9%80%A0%E7%9A%84%E4%BB%B7%E5%80%BC%E8%A1%A1%E9%87%8F%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%B0%B4%E5%B9%B3</id><content type="html" xml:base="http://localhost:4000/product%20design%20methodology/2019/11/06/%E9%80%9A%E8%BF%87%E5%88%9B%E9%80%A0%E7%9A%84%E4%BB%B7%E5%80%BC%E8%A1%A1%E9%87%8F%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%B0%B4%E5%B9%B3/">&lt;p&gt;LEAN IN&lt;/p&gt;
+
+&lt;h2 id=&quot;为何要衡量水平&quot;&gt;为何要衡量水平？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;衡量自身是改变世界的前提&lt;/li&gt;
+  &lt;li&gt;知己知彼，了解对手&lt;/li&gt;
+  &lt;li&gt;可量化的标准是提升的前提&lt;/li&gt;
+  &lt;li&gt;水平与收获的价值成正比&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;为何要关注价值&quot;&gt;为何要关注价值？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;学生才看重过程，成年人只看结果&lt;/li&gt;
+  &lt;li&gt;任何公司的治理都是以结果为导向的&lt;/li&gt;
+  &lt;li&gt;光从个人能力角度进行衡量没有价值&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;产品经理的价值有哪些&quot;&gt;产品经理的价值有哪些？&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;价值管理-对公司&lt;/li&gt;
+  &lt;li&gt;实施管理-对团队&lt;/li&gt;
+  &lt;li&gt;用户管理-对用户&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;价值管理&quot;&gt;价值管理&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;公司价值、使命的理解&lt;/li&gt;
+  &lt;li&gt;企业商业模式的管理&lt;/li&gt;
+  &lt;li&gt;行业的理解、研究&lt;/li&gt;
+  &lt;li&gt;提出产品价值&lt;/li&gt;
+  &lt;li&gt;选择产品定位&lt;/li&gt;
+  &lt;li&gt;把控产品走向&lt;/li&gt;
+  &lt;li&gt;产品机会分析&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;实施管理&quot;&gt;实施管理&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;帮助团队成员理解用户&lt;/li&gt;
+  &lt;li&gt;将用户痛点、功能转化为功能&lt;/li&gt;
+  &lt;li&gt;设计合理的产品方案&lt;/li&gt;
+  &lt;li&gt;设定产品标准&lt;/li&gt;
+  &lt;li&gt;协调团队内外资源&lt;/li&gt;
+  &lt;li&gt;推动产品的实施&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;用户管理&quot;&gt;用户管理&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;通过产品与用户沟通&lt;/li&gt;
+  &lt;li&gt;通过产品分析用户&lt;/li&gt;
+  &lt;li&gt;通过产品管理用户行为&lt;/li&gt;
+  &lt;li&gt;通过产品推动行业进步&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;衡量标准是什么&quot;&gt;衡量标准是什么？&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;持续为产品创造价值的能力&lt;/li&gt;
+  &lt;li&gt;推动产品不断获得市场的认可&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;level-0&quot;&gt;Level-0&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;智商达标&lt;/li&gt;
+  &lt;li&gt;具备强烈好奇心&lt;/li&gt;
+  &lt;li&gt;善于自我怀疑&lt;/li&gt;
+  &lt;li&gt;善于换位思考&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-1&quot;&gt;Level-1&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;开始以产品经理的视角看待产品，不再仅仅是产品的用户&lt;/li&gt;
+  &lt;li&gt;可以对某一款产品进行客观、理性的分析，不再停留于感性层面&lt;/li&gt;
+  &lt;li&gt;可以在体验产品之后，整理出产品的核心功能，主要流程&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-2&quot;&gt;Level-2&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可以独立整理出基于产品操作的竞品分析&lt;/li&gt;
+  &lt;li&gt;可以撰写产品说明&lt;/li&gt;
+  &lt;li&gt;对常用的工具有了一定的接触&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-3&quot;&gt;Level-3&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可以在指导下理解被分配的产品设计工作的目标&lt;/li&gt;
+  &lt;li&gt;可以参考竞品或其他产品，设计简单的功能&lt;/li&gt;
+  &lt;li&gt;可以向他人讲述自己的设计&lt;/li&gt;
+  &lt;li&gt;已经熟悉了常用的产品工具，可以使用基本的功能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-4&quot;&gt;Level-4&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可以理解分配到的任务的价值&lt;/li&gt;
+  &lt;li&gt;可以独立完成普通难度与复杂度的产品功能设计&lt;/li&gt;
+  &lt;li&gt;可以推动功能的实施&lt;/li&gt;
+  &lt;li&gt;可以进行用户调研或设计用户访谈&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-5&quot;&gt;Level-5&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可以理解处理的功能对整个产品的价值&lt;/li&gt;
+  &lt;li&gt;可以为功能制定实现与优化的版本计划&lt;/li&gt;
+  &lt;li&gt;可以处理多个有关联的功能设计&lt;/li&gt;
+  &lt;li&gt;可以在团队协作与版本推进中起到关键作用&lt;/li&gt;
+  &lt;li&gt;对商业模式有一定的认知&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-6&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Level-6&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;可以理解产品对于公司的价值，并基于公司的价值来判断产品的需求&lt;/li&gt;
+  &lt;li&gt;可以通过用户反馈、建议等信息，推导用户场景与痛点&lt;/li&gt;
+  &lt;li&gt;帮助团队成员理解产品，理解用户&lt;/li&gt;
+  &lt;li&gt;逐渐尝试建立整个产品的标准&lt;/li&gt;
+  &lt;li&gt;在产品功能设计上，具有稳定、高质量的产出&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;level-7&quot;&gt;Level-7&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;意识到产品在用户心智中的定位，并可以基于产品定位进行产品工作&lt;/li&gt;
+  &lt;li&gt;对用户痛点、行为、情感的判断敏锐而深刻&lt;/li&gt;
+  &lt;li&gt;能独立（或带领他人一起）寻找到深刻打动用户的地方&lt;/li&gt;
+  &lt;li&gt;能与其他部门的同学协作，完成对用户行为的疏导，并且不破坏产品本身的体验&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-8&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Level-8&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;可以深刻理解并清晰阐述产品的定位&lt;/li&gt;
+  &lt;li&gt;可以基于产品定位，把控产品的方向与走势&lt;/li&gt;
+  &lt;li&gt;通过产品进行用户培养与教育&lt;/li&gt;
+  &lt;li&gt;开始意识到团队配合中流程的重要性，领悟到团队协作也是一种产品；开始思考工作效率的问题，并尝试各种手段来量化评估&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;level-9&quot;&gt;Level-9&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;具备为产品选择合适定位的能力，并且该定位可以被验证&lt;/li&gt;
+  &lt;li&gt;可以基于定位，分析产品演进道路上的机会与风险&lt;/li&gt;
+  &lt;li&gt;有能力评估团队协作效率，并进行优化&lt;/li&gt;
+  &lt;li&gt;具备对整条或多条产品线进行管理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-10&quot;&gt;Level-10&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;深刻理解产品所在的领域与市场，或者可以快速了解、掌握一个新的领域&lt;/li&gt;
+  &lt;li&gt;有能力为公司设计合理的商业模式&lt;/li&gt;
+  &lt;li&gt;可以摸清行业的发展方向，并对应为公司设计产品规划&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-11&quot;&gt;Level-11&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;微创新&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;level-12&quot;&gt;Level-12&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;颠覆式创新&lt;/li&gt;
+  &lt;li&gt;行业整合&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;如何提升&quot;&gt;如何提升？&lt;/h2&gt;
+
+&lt;p&gt;多读书，多探讨，多思考，多总结&lt;/p&gt;</content><author><name>Diana Zhao</name></author><category term="衡量" /><summary type="html">LEAN IN</summary></entry></feed>

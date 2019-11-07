@@ -1,0 +1,909 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="日常工作," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Hello, It's me" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="本文章讨论作为产品经理，需要关注产品测试的哪些方面，以及如何进行产品的验收。">
+<meta name="keywords" content="日常工作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品经理如何对产品验收">
+<meta property="og:url" content="http://localhost:4000/product%20design%20methodology/2019/11/07/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%A6%82%E4%BD%95%E5%AF%B9%E4%BA%A7%E5%93%81%E8%BF%9B%E8%A1%8C%E9%AA%8C%E6%94%B6/">
+<meta property="og:site_name" content="Hello, It's me">
+<meta property="og:description" content="本文章讨论作为产品经理，需要关注产品测试的哪些方面，以及如何进行产品的验收。">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品经理如何对产品验收">
+<meta name="twitter:description" content="本文章讨论作为产品经理，需要关注产品测试的哪些方面，以及如何进行产品的验收。">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>产品经理如何对产品验收 | Hello, It's me</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hello, It's me</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/product%20design%20methodology/2019/11/07/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%A6%82%E4%BD%95%E5%AF%B9%E4%BA%A7%E5%93%81%E8%BF%9B%E8%A1%8C%E9%AA%8C%E6%94%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Diana Zhao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello, It's me">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            产品经理如何对产品验收
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-07T00:00:00+08:00">
+                2019-11-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Product%20Design%20Methodology" itemprop="url" rel="index">
+                    <span itemprop="name">Product Design Methodology</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>本文章讨论作为产品经理，需要关注产品测试的哪些方面，以及如何进行产品的验收。</p>
+
+<h2 id="产品经理的测试和验收">产品经理的测试和验收</h2>
+
+<p>一方面，开发完成后的产品很可能与产品的定义出现偏差（原因很多，事实上大部分开发人员没有仔细查看需求文档，有了大概印象就开始开发）；另一方面，产品验收需要从用户角度，去更加广度和深度地审视整个产品。所以，开发人员完成开发后，不仅需要测试同学对产品进行测试，产品经理也要对产品进行验收。</p>
+
+<p>产品经理主要参与的是系统测试阶段和对产品的验收。开发人员对开发代码的最小单位进行单元测试，然后将程序模块组合起来，进行集成测试。在系统测试阶段，将可运行的软件安装在真实或者模拟真实的环境下操作使用，测试软件的功能和性能，能够正常的运行。产品配合测试人员，从业务角度验证产品是否符合设计的要求和需求文档，关心功能模块的可用性和性能等。</p>
+
+<p>之后进行产品验收，验收阶段需要以用户为主进行测试，按照用户的使用情况设计测试用例和流程，使用生产中的实际数据进行测试，确定软件能否满足交付的标准。在这个阶段，产品经理需要从产品思维转化为用户思维，关心主要流程，可用性，易用性，兼容性，情感化设计等多个方面的用户体验的问题。要求产品经理进行探索性质的测试，能够从实际的使用场景中发现问题，进行更加全局的考虑。</p>
+
+<h2 id="系统测试">系统测试</h2>
+
+<p>这个阶段主要进行功能性测试，从业务角度验证产品是否符合设计的要求和需求文档。主要还是测试人员在测试，但是产品经理在这个过程中，具有需要特别关注的点：</p>
+
+<p><strong>功能测试：</strong> 对产品的各功能模块进行验收，根据测试用例以及各种操作路径，逐项测试检验，以确定产品是否达到设计的要求。这部分的测试工作与测试人员的专业测试有重合。</p>
+
+<p><strong>UI 测试：</strong> 首先，产品经理要检验实现出来的产品，能否达到 UED 的界面设计以及产品的交互设计要求。界面文字是否显示正确，命名是否统一；控件的摆放位置是否符合客户的使用习惯；文字、图片的组合是否一致；页面元素的可用性等。</p>
+
+<p>其次，要从整体上检验产品界面可能存在的问题。界面的功能模块的布局是否合理，整体风格是否一致；页面是否美观。</p>
+
+<p><strong>性能测试：</strong> 模拟多种正常、峰值以及异常负载条件来对系统的各项指标进行测试。产品经理需要关注当负载逐渐增加的时候，系统各项指标的变化情况，这样来确定系统的瓶颈，以获得系统能够提供的最大服务级别。</p>
+
+<p><strong>回归测试：</strong> 产品要关注在代码升级之后，产品的核心流程和重点功能模块没有问题。</p>
+
+<h2 id="产品验收">产品验收</h2>
+
+<p>产品经理对产品最熟悉，验收一定要将自己的产品思维转化为<strong>用户思维</strong>，想象自己是一个小白用户，从用户的使用场景出发。随意输入，随意点击，不断与系统交互，带着问题测试。目的是通过带着问题的测试，以不同用户的不同操作流程去使用产品，发现问题。</p>
+
+<p>或者找不太熟悉产品的交付、销售等同事，实际使用产品，产品经理提个小板凳在边上观察操作的流程，看哪里阻塞了，哪里有问题。在这个阶段，产品经理要建立并维护自己的 checklist，可能会有一些需要深入思考的问题浮现出来，也为以后的产品设计提供思路和参考。</p>
+
+<h2 id="产品验收报告">产品验收报告</h2>
+
+<p>经过系统测试和产品的验收，这一轮的产品验收完成，可以完成一个验收报告同步给研发测试同事，项目经理，领导等。</p>
+
+<p>报告中包含这轮产品的需求内容，时间以及系统版本号等基本信息。如果有未完成的需求，需要标注出优先级，放到后续迭代中。这轮产品迭代中，有哪些遗留的问题，要具体描述问题是什么（在 jira 中建立问题，详细描述问题，标注链接）。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint X.X 产品验收报告</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>产品更新内容</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>产品版本号</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>封版时间</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>遗留问题</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>产品验收人</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>验收时间</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>另外，团队或者个人需要进行产品的 checklist（产品债务）的维护。</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C" rel="tag"># 日常工作</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/product%20design%20methodology/2019/11/06/%E9%80%9A%E8%BF%87%E5%88%9B%E9%80%A0%E7%9A%84%E4%BB%B7%E5%80%BC%E8%A1%A1%E9%87%8F%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%B0%B4%E5%B9%B3/" rel="prev" title="通过创造的价值衡量产品经理水平">
+                通过创造的价值衡量产品经理水平 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/avatar.jpg"
+               alt="Diana Zhao" />
+          <p class="site-author-name" itemprop="name">Diana Zhao</p>
+           
+              <p class="site-description motion-element" itemprop="description">博观而约取，厚积而薄发</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#产品经理的测试和验收"> <span class="nav-number">1</span> <span class="nav-text">产品经理的测试和验收</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#系统测试"> <span class="nav-number">2</span> <span class="nav-text">系统测试</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#产品验收"> <span class="nav-number">3</span> <span class="nav-text">产品验收</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#产品验收报告"> <span class="nav-number">4</span> <span class="nav-text">产品验收报告</span> </a> </li>
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Diana Zhao</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
